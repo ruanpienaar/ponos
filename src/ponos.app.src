@@ -1,0 +1,25 @@
+{application, ponos,
+ [
+  {description, ""},
+  {vsn, "1"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {mod, { ponos_app, []}},
+  {env, []},
+  {modules,[
+    ponos,
+    ponos_default_task_runner,
+    ponos_load_generator,
+    ponos_load_specs,
+    ponos_sup,
+    ptop,
+    ponos_app,
+    ponos_file_task_runner,
+    ponos_load_generator_sup,
+    ponos_serv,
+    ponos_task_runner_callbacks
+  ]}
+ ]}.
